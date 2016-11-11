@@ -3,7 +3,7 @@
   <parent>
   	 <groupId>com.allen.commons</groupId>
      <artifactId>allen-commons-parent</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+     <version>1.0.0-SNAPSHOT</version>
   </parent>
  
   <artifactId>allen-commons-exception</artifactId>
@@ -12,12 +12,32 @@
 
   <dependencies>
   		
-  		
+  		<!-- servlet 相关依赖 -->
   		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>${javax.servlet.api.version}</version>
 		</dependency>
+		
+		<!-- log4j 相关依赖 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-api</artifactId>
+		    <version>${org.slf4j.api.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.8.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.3.2</version>
+		</dependency>
+		
   </dependencies>
   
 </project>
